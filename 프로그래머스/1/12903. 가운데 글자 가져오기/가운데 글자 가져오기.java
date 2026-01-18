@@ -2,12 +2,16 @@ class Solution {
     public String solution(String s) {
         String answer = "";
         int n = s.length();
+        int m = 0;
         
         if (n%2 == 0) {
-            answer = s.substring(n/2-1, n/2+1);
+            m = n/2 - 1;
+            answer = s.substring(m, m+2);
         } else {
-            answer = s.substring((n+1)/2-1, (n+1)/2);
+            m = n/2;
+            answer = s.substring(m, m+1);
         }
+        
         return answer;
     }
 }
