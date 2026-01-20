@@ -10,8 +10,11 @@ class Solution {
                     list.add(arr[i]);
                 }
             } else {
-                for (int j=0; j<arr[i]; j++) {
-                    list.remove(list.size() - 1);
+                // 실무용 예외 처리 로직 추가
+                if (!list.isEmpty()) {
+                    for (int j=0; j<arr[i]; j++) {
+                        list.remove(list.size() - 1);
+                    }
                 }
             }
         }
