@@ -8,18 +8,17 @@ class Solution {
                 int db = Math.abs(b - n);
                 
                 if (da == db) {
-                    numlist[i] = Math.max(a, b);
-                    numlist[j] = Math.min(a, b);
+                    if (a < b) {
+                        numlist[i] = b;
+                        numlist[j] = a;
+                    }
                 } else {
-                    if (da < db) {
-                        numlist[i] = a;
-                        numlist[j] = b;
-                    } else {
+                    if (da > db) {
                         numlist[i] = b;
                         numlist[j] = a;
                     }
                 }
-            } 
+            }
         }
         
         return numlist;
