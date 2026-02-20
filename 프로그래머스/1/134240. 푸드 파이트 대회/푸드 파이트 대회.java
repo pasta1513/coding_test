@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 class Solution {
     public String solution(int[] food) {
         int[] num = new int[food.length];
@@ -17,7 +15,8 @@ class Solution {
                 answer += String.valueOf(i);
             }
         }
-        
+
+        // 시간복잡도 O(n²)
         answer += "0";
         
         for (int i=num.length-1; i>=0; i--) {
