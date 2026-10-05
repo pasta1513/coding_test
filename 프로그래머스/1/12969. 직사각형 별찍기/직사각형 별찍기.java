@@ -8,6 +8,7 @@ class Solution {
         
         StringBuilder sb = new StringBuilder();
         for (int i=0; i<b; i++) {
+            // sb.append("*".repeat(n)).append("\n");
             for (int j=0; j<a; j++) {
                 sb.append("*");
             }
