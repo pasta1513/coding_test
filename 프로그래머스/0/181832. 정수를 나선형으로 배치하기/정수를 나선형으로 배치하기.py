@@ -1,6 +1,7 @@
 def solution(n):
     answer = [[0]*n for _ in range(n)]
     x, y = 0, 0
+    # 시계 방향(오른쪽, 아래, 왼쪽, 위)
     dx = [0, 1, 0, -1]
     dy = [1, 0, -1, 0]
     direction = 0
