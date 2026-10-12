@@ -1,8 +1,5 @@
 def solution(dots):
-    a = dots[0]
-    b = dots[1]
-    c = dots[2]
-    d = dots[3]
+    a, b, c, d = dots
     
     if (a[1]-b[1])/(a[0]-b[0]) == (c[1]-d[1])/(c[0]-d[0]):
         return 1
