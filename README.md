@@ -1,2 +1,2 @@
 # coding_test
-Java 코딩 테스트 백업
+프로그래머스 코딩테스트(Java, Python) 백업
