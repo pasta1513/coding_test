@@ -14,4 +14,5 @@ def solution(num, total):
     
     for i in range(int(start_num), int(last_num)):
         answer.append(i)
+        
     return answer
